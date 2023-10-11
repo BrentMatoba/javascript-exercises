@@ -1,13 +1,16 @@
 const palindromes = function (word) {
 //take word
 //iterate through front and from back.
-i = word[0]
-j = word[word.length-1]
-let front = i
-let back = j
+const processed = word.toLowerCase().replace(/^[a-zA-Z0-9]$/);
+return processed.split("").reverse().join("") == processed;
 
-//if space or punctuation, skip
-//if letter, compare the two until front index >= back index
+
+//This is code from the solution not my own***
+//I think the takeaway from this is that I don't spend enough time thinking about the problem
+//and jump right in. This would ahve been so much less of a headache if I had taken the time to
+//peruse javascripts string manipulation methods. Usually when working with data, half the 
+//effort is cleaning the data before starting.
+
 };
 
 // Do not edit below this line
@@ -18,7 +21,3 @@ module.exports = palindromes;
 
 
 
-
-function isAlphanumeric(string){
-    
-}
